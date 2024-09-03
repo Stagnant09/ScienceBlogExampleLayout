@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+::selection {
+    background-color: rgb(232, 232, 48);
+    color: black;
+}
+
+* {
+    background-color: black;
+    color: white;
+    font-family: "Nunito";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0px;
+    height: 33px;
+    line-height: 31px;
+    background-color: rgb(17, 17, 17);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.option {
+    font-family: 'Consolas', sans-serif !important;
+    background-color: rgb(17, 17, 17);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: rgb(27, 27, 27);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.container {
+    width: 70%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.rich-title {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 32px;
+}
+
+.date, .author {
+    font-size: 12px;
+    margin-top: 3px;
+    color:rgb(208, 208, 208);
+}
+
+.content {
+    font-size: 16px;
+}
+
+.paragraph {
+    margin-bottom: 11px;
+}
+
+.sector {
+    margin-top: 36px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    /*Set the text vertical align in the middle of the line*/
+    display: flex;
+}
+
+.contents {
+    height: 140px;
+    width: 16%;
+    background-color: rgb(14, 14, 14);
+    margin-top: 30px;
+}
+
+.peak, .cs {
+    font-size: 13px;
+    margin-left: 15px;
+    padding-top: 10px;
+    width: 70%;
+    background-color: rgb(14, 14, 14);
+    font-weight: 100;
+}
+
+.peak {
+    text-decoration: solid underline rgb(255, 255, 255) 1px;
+    /*underline distance from text = 6px*/
+    text-underline-offset: 6px;
+}
+
+.cs:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.hideshow {
+    font-size: 13px;
+    margin-right: 17px;
+    margin-top: 7px;
+}
+
+.hideshow:hover {
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: solid underline rgb(255, 255, 255) 3px;
+    text-underline-offset: 3px;
+}
+
+.equation, .legend {
+    font-family: 'Cambria', consolas;
+    margin: 27px;
+}
+
+.equation {
+    margin-top: 36px;
+}
+
+.legend {
+    text-align: center;
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 26px;
+}
+
+.link {
+    color: rgb(108, 212, 247);
+}
+
+.link:hover {
+    cursor: pointer;
+    color: rgb(108, 212, 247);
+    text-decoration: solid underline rgb(255, 255, 255) 3px;
+    text-underline-offset: 3px;
+}
+
+.code {
+    margin: 25px;
+}
+
+.header-code, .line {
+    padding-left: 15px;
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.header-code {
+    background-color: rgb(27, 27, 27);
+    align-items: center;
+}
+
+.line {
+    font-family: 'Consolas', sans-serif;
+    background-color: rgb(42, 42, 42);
+}
+
+.copy {
+    background-color: rgb(10, 10, 10);
+}
+
+.copy:hover {
+    cursor: pointer;
+}
+
+.note {
+    font-size: 12px;
+}
+
+.source, .editions {
+    font-style: italic;
+}
+
+li {
+    margin-bottom: 11px;
+}
+
+footer {
+    font-size: 10px;
+    color: rgb(166, 166, 166);
+    margin-bottom: 10px;
+}

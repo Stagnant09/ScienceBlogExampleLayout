@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Blog</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script type="text/javascript">
+            window.MathJax = {
+                tex: {
+                    packages: ['base'],
+                },
+                chtml: {
+                    fonts: {
+                    '@font-face': {
+                        fontFamily: "MathJax_Main",
+                        src: "url('https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Regular.woff') format('woff')"
+                    }
+                    },
+                    scale: 1.05 // Adjusts the size of the font
+                }
+            };
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="option">/home</div>
+            <div class="option">/about</div>
+            <div class="option">/contact</div>
+        </header>
+        <div class="container">
+            <div class="rich-title">
+                <!-- Contains the title of the article, share buttons, date, author, etc. -->
+                <div class="top">
+                    <div class="title">This is the title of the article; a placeholder</div>
+                </div>
+                <div class="bottom">
+                    <div class="share-bar"></div>
+                    <div class="date">December 31st, 2099</div>
+                    <div class="author">by Placeholder Author</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="paragraph">This is the main content of the article. 
+                    This text is a placeholder. Its font size is 16 px on a desktop 
+                    device connected to a large monitor. If the size shrinks, then the font size 
+                    will be 12 px. The container of the main content of the webpage covers 
+                    the 70% of the screen if the monitor is large enough.
+                </div>
+                <div class="paragraph">This is the second paragraph of the article. The margin between paragraphs is 11 px.</div>
+                <div class="contents">
+                    <div class="peak">Contents</div>
+                    <div class="cs">1. Sample Sector</div>
+                    <div class="cs">2. Another Sector</div>
+                    <div class="cs">3. References</div>
+                </div>
+                <div class="sector" tag="1"><span class="hideshow" tag="1">▶ </span>Sample Sector</div>
+                <div class="paragraph">Above there is a sector separator with a unique tag. Next to the title of the sector there is a hide/show button.</div>
+                <div class="paragraph">Next, there is an example equation displayed in LaTeX formatting:</div>
+                <div class="equation">
+                    \[
+                        \frac{d}{dx} f(x) = \lim_{h\to0} \frac{f(x+h)-f(x)}{h} \: \: \: \: \: \: \: \: \: (1 \:. 1\:)
+                    \]
+                </div>
+                <div class="legend">Fig. 1.1. This is an example legend.</div>
+                <div class="paragraph">This how a <span class="link">link</span> is displayed.</div>
+                <div class="sector" tag="2"><span class="hideshow" tag="2">▶ </span>Another Sector</div>
+                <div class="paragraph">This is the second sector. Now, here is how a script is displayed:</div>
+                <div class="code">
+                    <div class="header-code" style="overflow: hidden;">Java <span class="copy" style="float: right;">&nbsp;Copy 📋</span></div>
+                    <div class="line">
+                        public class Main {
+                    </div>
+                    <div class="line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {
+                    </div>
+                    <div class="line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World!"); // Prints "Hello World!" to the console.
+                    </div>
+                    <div class="line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                    </div>
+                    <div class="line">
+                        }
+                    </div>
+                </div>
+                <div class="paragraph note">Note: You can copy the above script by clicking on the copy button.</div>
+                <div class="sector" tag="2"><span class="hideshow" tag="3">▶ </span>References</div>
+                <div class="paragraph">
+                    <ul>
+                        <li>First Reference [2099], <span class="source">Placeholder Author</span>, <span class="editions">Example Editions</span></li>
+                        <li>Second Reference [2099], <span class="source">Placeholder Author</span>, <span class="editions">Example Editions</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            @Stagnant09 2024
+        </footer>
+    </body>
+</html>
