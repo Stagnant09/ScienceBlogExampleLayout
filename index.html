@@ -50,47 +50,53 @@
                 <div class="paragraph">This is the second paragraph of the article. The margin between paragraphs is 11 px.</div>
                 <div class="contents">
                     <div class="peak">Contents</div>
-                    <div class="cs">1. Sample Sector</div>
-                    <div class="cs">2. Another Sector</div>
-                    <div class="cs">3. References</div>
+                    <div class="cs" tag="1">1. Sample Sector</div>
+                    <div class="cs" tag="2">2. Another Sector</div>
+                    <div class="cs" tag="3">3. References</div>
                 </div>
                 <div class="sector" tag="1"><span class="hideshow" tag="1">▶ </span>Sample Sector</div>
-                <div class="paragraph">Above there is a sector separator with a unique tag. Next to the title of the sector there is a hide/show button.</div>
-                <div class="paragraph">Next, there is an example equation displayed in LaTeX formatting:</div>
-                <div class="equation">
-                    \[
-                        \frac{d}{dx} f(x) = \lim_{h\to0} \frac{f(x+h)-f(x)}{h} \: \: \: \: \: \: \: \: \: (1 \:. 1\:)
-                    \]
+                <div class="sector-content-container" tag="1">
+                    <div class="paragraph">Above there is a sector separator with a unique tag. Next to the title of the sector there is a hide/show button.</div>
+                    <div class="paragraph">Next, there is an example equation displayed in LaTeX formatting:</div>
+                    <div class="equation">
+                        \[
+                            \frac{d}{dx} f(x) = \lim_{h\to0} \frac{f(x+h)-f(x)}{h} \: \: \: \: \: \: \: \: \: (1 \:. 1\:)
+                        \]
+                    </div>
+                    <div class="legend">Fig. 1.1. This is an example legend.</div>
+                    <div class="paragraph">This how a <span class="link">link</span> is displayed.</div>
                 </div>
-                <div class="legend">Fig. 1.1. This is an example legend.</div>
-                <div class="paragraph">This how a <span class="link">link</span> is displayed.</div>
                 <div class="sector" tag="2"><span class="hideshow" tag="2">▶ </span>Another Sector</div>
-                <div class="paragraph">This is the second sector. Now, here is how a script is displayed:</div>
-                <div class="code">
-                    <div class="header-code" style="overflow: hidden;">Java <span class="copy" style="float: right;">&nbsp;Copy 📋</span></div>
-                    <div class="line">
-                        public class Main {
+                <div class="sector-content-container" tag="2">
+                    <div class="paragraph">This is the second sector. Now, here is how a script is displayed:</div>
+                    <div class="code" tag="1">
+                        <div class="header-code" style="overflow: hidden;">Java <span class="copy" style="float: right;" tag="1">&nbsp;Copy 📋</span></div>
+                        <div class="line">
+                            public class Main {
+                        </div>
+                        <div class="line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {
+                        </div>
+                        <div class="line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World!"); // Prints "Hello World!" to the console.
+                        </div>
+                        <div class="line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                        </div>
+                        <div class="line">
+                            }
+                        </div>
                     </div>
-                    <div class="line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {
-                    </div>
-                    <div class="line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello World!"); // Prints "Hello World!" to the console.
-                    </div>
-                    <div class="line">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-                    </div>
-                    <div class="line">
-                        }
-                    </div>
+                    <div class="paragraph note">Note: You can copy the above script by clicking on the copy button.</div>
                 </div>
-                <div class="paragraph note">Note: You can copy the above script by clicking on the copy button.</div>
-                <div class="sector" tag="2"><span class="hideshow" tag="3">▶ </span>References</div>
-                <div class="paragraph">
-                    <ul>
-                        <li>First Reference [2099], <span class="source">Placeholder Author</span>, <span class="editions">Example Editions</span></li>
-                        <li>Second Reference [2099], <span class="source">Placeholder Author</span>, <span class="editions">Example Editions</span></li>
-                    </ul>
+                <div class="sector" tag="3"><span class="hideshow" tag="3">▶ </span>References</div>
+                <div class="sector-content-container" tag="3">
+                    <div class="paragraph">
+                        <ul>
+                            <li>First Reference [2099], <span class="source">Placeholder Author</span>, <span class="editions">Example Editions</span></li>
+                            <li>Second Reference [2099], <span class="source">Placeholder Author</span>, <span class="editions">Example Editions</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,4 +104,5 @@
             @Stagnant09 2024
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>

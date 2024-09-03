@@ -53,6 +53,9 @@ header {
 
 .rich-title {
     margin-bottom: 40px;
+    border-bottom: dotted rgb(208, 208, 208) 1px;
+    border-spacing: 4px;
+    height: 88px;
 }
 
 .title {
