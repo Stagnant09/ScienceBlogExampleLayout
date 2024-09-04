@@ -194,8 +194,14 @@ li {
     margin-bottom: 11px;
 }
 
-footer {
+footer, .github {
     font-size: 10px;
     color: rgb(166, 166, 166);
     margin-bottom: 10px;
+}
+
+.github {
+    text-decoration: underline rgb(166, 166, 166) dotted 1px;
+    text-underline-offset: 4px;
+    cursor: pointer;
 }
